@@ -1,0 +1,318 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+}
+
+
+
+<div class="wrapper2">
+    <nav>
+
+        <div class="content">
+            <div class="logo"><a href="#" style="color:white;text-decoration:none;">RentalHousing</a></div>
+            <ul class="links">
+                <li><a href="#" style="color:white;text-decoration:none;">Home</a></li>
+                <li style="text-decoration:none;">@Html.ActionLink("Profile", "Profile", "Profile")</li>
+                <li style="text-decoration:none;">@Html.ActionLink("Addproperty", "Addproperty", "Addproperty")</li>
+               
+                <li>
+                    <a href="#" class="desktop-link" style="color:white;text-decoration:none;"> <i class="fas fa-user" style="color:white;padding-right: 5px;"></i>@Session["name"]</a>
+                </li>
+                <br />
+
+                <form action="Logout" method="post"><button style="padding:15px 15px;border-radius:10px;margin-right:5%;">Logout</button></form>
+
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<br />
+
+
+
+<div class="jumbotron text-center" style="margin-top:20px;">
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="text" class="form-control" size="50" style="Padding:25px 25px;" placeholder="Enter Your Search" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+    <div class="container-fluid text-center bg-grey" style="position:relative">
+        <h2>“The magic thing about home is that it feels good to leave, and it feels even better to come back.”</h2><br>
+
+        <div class="row text-center">
+            <div class="col-sm-4" id="SALEM SHEVAPET">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/ee.jpg" alt="HOME1" width="200" height="100">
+                    <p><strong>Shevapet</strong></p>
+                    <p>1 BHK Floor for Rent</p>
+                    <p>in Shevapet, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black;text-decoration:none;">@Html.ActionLink("Viewproperty", "Viewproperty", "Viewproperty")</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM SWARNAPURI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/bed.jpg" alt="HOME2" width="200" height="100">
+                    <p><strong>Swarnapuri</strong></p>
+                    <p>2 BHK Floor for Rent</p>
+                    <p>Swarnapuri, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM NETHIMEDU">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/bed2.jpeg" alt="HOME3" width="200" height="100">
+                    <p><strong>Nethimedu</strong></p>
+                    <p>2 Bedrooms 1HK  house for Rent</p>
+                    <p>in Nethimedu, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM GUGHAI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/front.jpg" alt="HOME4" width="200" height="100">
+                    <p><strong>Gughai</strong></p>
+                    <p>1BHK 1Bath</p>
+                    <p>in Gughai,Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM FAIRLANDS">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/house.jpg" alt="HOME5" width="200" height="100">
+                    <p><strong>Fairlands</strong></p>
+                    <p>2BHK 2Baths</p>
+                    <p>in Fairlands, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM PRABHAT">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall.jpg" alt="HOME6" width="200" height="100">
+                    <p><strong>Jagri Reddipatty</strong></p>
+                    <p>1BHK 1Bath</p>
+                    <p>in Prabhat, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM KONDALAMPATTI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall1.jpg" alt="HOME7" width="200" height="100">
+                    <p><strong>Kondalampatti</strong></p>
+                    <p>3Bedrooms 2Baths</p>
+                    <p>in Kondalampatti,Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="NAMAKKAL KALIPATTI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/kitchen.jpg" alt="HOME8" width="200" height="100">
+                    <p><strong>Kalipatti</strong></p>
+                    <p>2Bedrooms 2Bath</p>
+                    <p>in Kalipatti, Namakkal, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="NAMAKKAL MALLASAMUDIRAM">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall2.jpg" alt="HOME9" width="200" height="100">
+                    <p><strong>Mallasamudiram</strong></p>
+                    <p>2BHK 2Baths</p>
+                    <p>in Mallasamudiram,Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="NAMAKKAL SANGAKIRI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall3.jpg" alt="HOME10" width="200" height="100">
+                    <p><strong>Sangakiri</strong></p>
+                    <p>3BHK 2Baths</p>
+                    <p>in Sangakiri, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI TAMBARAM">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall4.jpg" alt="HOME11" width="200" height="100">
+                    <p><strong>Tambaram</strong></p>
+                    <p>3Bedrooms 2Baths</p>
+                    <p>in Tambaram, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI SIRUSERI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/ee.jpg" alt="HOME12" width="200" height="100">
+                    <p><strong>Siruseri</strong></p>
+                    <p>2Bedrooms 2Baths</p>
+                    <p>in Siruseri, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI MYLAPORE">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall6.jpg" alt="HOME13" width="200" height="100">
+                    <p><strong>Mylapore</strong></p>
+                    <p>1BHK 1Bath</p>
+                    <p>in Mylapore, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI THARAMANI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall7.jpg" alt="HOME14" width="200" height="100">
+                    <p><strong>Tharamani</strong></p>
+                    <p>3BHK 2Baths</p>
+                    <p>in Tharamani, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI THIRUVANMIYUR">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/hall8.jpeg" alt="HOME15" width="200" height="100">
+                    <p><strong>Thiruvanmiyur</strong></p>
+                    <p>3BHK 2Baths</p>
+                    <p>in Thiruvanmiyur, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI SHOLINGANALLUR">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/kitchen1.jpg" alt="HOME16" width="200" height="100">
+                    <p><strong>Sholinganallur</strong></p>
+                    <p>2Bedrooms 1Bath</p>
+                    <p>in Sholinganallur, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI BESANT NAGAR">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/bed.jpg" alt="HOME17" width="200" height="100">
+                    <p><strong>Besant Nagar</strong></p>
+                    <p>2Bedrooms 2Baths</p>
+                    <p>in Besant Nagar, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="CHENNAI GUINDY">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/balcony2.jpg" alt="HOME18" width="200" height="100">
+                    <p><strong>Guindy</strong></p>
+                    <p>2Bedrooms 2Baths</p>
+                    <p>in Guindy, Chennai, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="ERODE PERUNDURAI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/balcony3.jpg" alt="HOME19" width="200" height="100">
+                    <p><strong>Perundurai</strong></p>
+                    <p>1Bedroom 1Bath</p>
+                    <p>in Perundurai, Erode, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="ERODE BHAVANI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/sofa.jpg" alt="HOME20" width="200" height="100">
+                    <p><strong>Bhavani</strong></p>
+                    <p>3Bedrooms 2Baths</p>
+                    <p>in Bhavani, Erode, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="SALEM MALLUR">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/kitchen.jpg" alt="HOME21" width="200" height="100">
+                    <p><strong>Mallur</strong></p>
+                    <p>2Bedrooms 2Baths</p>
+                    <p>in Mallur, Salem, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="COIMBATORE GANDHIPURAM">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/e.jpg" alt="HOME22" width="200" height="100">
+                    <p><strong>Gandhipuram</strong></p>
+                    <p>3BHK 2Baths</p>
+                    <p>in Gandhipuram, Coimbatore, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="COIMBATORE GANAPATHI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/out1.jpg" alt="HOME23" width="200" height="100">
+                    <p><strong>Ganapathi</strong></p>
+                    <p>3BHK 2Baths</p>
+                    <p>in Ganapathi, Coimbatore, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+            <div class="col-sm-4" id="COIMBATORE SARAVANAMPATTI">
+                <div class="thumbnail">
+                    <img src="~/images/ViewProperty/out.jpg" alt="HOME24" width="200" height="100">
+                    <p><strong>Saravanampatti</strong></p>
+                    <p>3Bedrooms 2Baths</p>
+                    <p>in Saravanampatti, Coimbatore, Tamilnadu</p>
+                    <button style="background-color:burlywood;margin:5px 5px;padding: 5px 5px; border-radius: 5px;border: 1px solid black">View Property</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Some works we do that we give our best</p>
+        <p>Our utmost response is always one step ahead with your trustworthy feedback.</p>
+        <p>Good customer service is all about bringing customers back. And about sending them away happy – happy enough to pass positive feedback about your business along to others, who may then try the product or service you offer for themselves and in their turn become repeat customers. </p>
+        <p>We believe our work, We believe our customers.</p>
+        <hr style="color:white;">
+        <div style="display: flex">
+            <div>
+                <p class="follow">Follow us on</p>
+                <p class="icons">
+                    <a href="https://twitter.com/Nar_the_Phoenix" class="fab fa-twitter fa-2x"></a>&ensp;
+                    <a href="https://instagram.com/nar_the_phoenix" class="fab fa-instagram fa-2x" style="color:#DD2A7B"></a>&ensp;
+                    <a href="https://linkedin.com/in/narayananadaikalavan" class="fab fa-linkedin-in fa-2x" style="color:#0e76a8"></a>&ensp;
+                    <a href="https://t.me/Narayanan_A" class="fab fa-telegram fa-2x" style="color:#0088cc"></a>
+                </p>
+            </div>
+            <div>
+                <p style="margin-left:170px">Contact Us</p>
+                <p style="margin-left:170px"><i class="fab fa-mailchimp fa-lg"></i>&ensp;<a href="mailto:tamilarasan0024@gmail.com">rentalhousing@gmail.com</a></p>
+                <p style="margin-left:170px"><i class="fas fa-phone-alt"></i>&ensp;<a href="tel:+918883406468" style="text-decoration: none">8883406468</a></p>
+            </div>
+            <div>
+                <p class="address">Address:</p>
+                <p class="address1"><i class="fas fa-map-marker-alt" style="color:chartreuse"></i>&ensp;Salem, Tamilnadu</p><p class="address2">India</p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <p class="copy">&#169 Copyright 2021 | Rental Housing | All Rights Reserved  </p>
+        </div>
+    </section>
+    <script>
+        $(".form-control").keyup(function () {
+            var val = $.trim(this.value.toUpperCase());
+
+            if (val === "")
+                $('.col-sm-4').show();
+            else {
+                $('.col-sm-4').hide();
+                $(".col-sm-4[id*=" + val + "]").show();
+
+            }
+
+        });
+    </script>
+
+
