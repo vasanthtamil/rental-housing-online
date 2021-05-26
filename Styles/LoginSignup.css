@@ -347,3 +347,31 @@ img {
     font-size:15px;
     text-align:center;
 }
+
+
+.logout-form-btn {
+    /*font-family: Montserrat-Bold;*/
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    background: rebeccapurple;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+    .logout-form-btn:hover {
+        background: #333333;
+    } 
